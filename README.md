@@ -1,6 +1,6 @@
 # VBA Macros for SRRC Water/Air Temp Access Database: A Quick Guide
 
-This README provides a basic description and tutorial for a set of VBA (Visual Basic for Applications) macros designed for use with SRRC's `srrc_wtemp_db.accdb` Microsoft Access databases. These macros facilitate various operations such as exporting data, updating records, and logging changes. These macros should already be saved into the current version of the wtemp database.
+This README provides a basic description and tutorial for a set of VBA (Visual Basic for Applications) macros designed for use with SRRC's `srrc_wtemp_db.accdb` Microsoft Access database. These macros facilitate various operations such as exporting data, updating records, and logging changes. These macros should already be saved into the current version of the wtemp database.
 
 ## 1. ExportYearlySummary `./YearlySummary.bas`
 
