@@ -11,6 +11,7 @@ Sub ReplaceSiteCodeAndLogChanges()
     Dim csvContent As String
     Dim csvPath As String
     Dim fNum As Integer
+    Dim currentDate As String
     
     ' Initialize database
     Set db = CurrentDb()
@@ -42,8 +43,11 @@ Sub ReplaceSiteCodeAndLogChanges()
         rs.Close
     Next i
     
-    ' Save changes to CSV
-    csvPath = Application.CurrentProject.Path & "\SiteCodeChanges.csv"
+    ' Current date in YYYYMMDD format
+    currentDate = Format(Now, "yyyymmdd")
+    
+    ' Save changes to CSV, including the current date in the file name
+    csvPath = Application.CurrentProject.Path & "\SiteCodeChanges_" & currentDate & ".csv"
     fNum = FreeFile
     Open csvPath For Output As #fNum
     Print #fNum, csvContent
