@@ -12,11 +12,21 @@ Sub ReplaceSiteCodeAndLogChanges()
     Dim csvPath As String
     Dim fNum As Integer
     Dim currentDate As String
+    Dim userResponse As Integer
+    
+    ' Warning to the user
+    userResponse = MsgBox("Have you changed the necessary backfill information before using this script?", vbYesNo + vbQuestion, "Confirm Information Change")
+    If userResponse = vbNo Then
+        MsgBox "Please update the necessary information before proceeding.", vbExclamation, "Action Required"
+        Exit Sub
+    End If
     
     ' Initialize database
     Set db = CurrentDb()
     
     ' Tables to be accessed
+    ' CHANGE AS NEEDED!
+    ' EXTRA TABLES CAN BE ADDED
     tblNames = Array("tbl_AnnualStats_Archived19952017", "tbl_DailyStats_Archived19952017", "tbl_HourlyData_Archived19952017")
     
     ' Prompt for words
@@ -43,8 +53,8 @@ Sub ReplaceSiteCodeAndLogChanges()
         rs.Close
     Next i
     
-    ' Current date in YYYYMMDD format
-    currentDate = Format(Now, "yyyymmdd")
+    ' Current date in YYYY-MM-DD_HHNN format for better readability
+    currentDate = Format(Now, "yyyy-mm-dd_hhnn")
     
     ' Save changes to CSV, including the current date in the file name
     csvPath = Application.CurrentProject.Path & "\SiteCodeChanges_" & currentDate & ".csv"
