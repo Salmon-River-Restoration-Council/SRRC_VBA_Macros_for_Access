@@ -46,6 +46,19 @@ Searches for and replaces instances of a specified word in the `SiteCode` column
 2. **User Prompts:** Input the word to find and the replacement word when prompted.
 3. **CSV Log:** The macro generates a CSV file in the project's path, logging all replacements made, with the filename including the current date.
 
+## Intended Use and Disclaimer
+
+### Intended Use
+These macros are designed for internal use within the SRRC organization. They are specifically tailored to work with our `srrc_wtemp_db.accdb` database structure and may not be directly applicable to other databases or organizations without significant modifications.
+
+### Open Source Inspiration
+While we've made this code publicly available, it's primarily for transparency and to potentially inspire similar solutions in other organizations. We encourage others to learn from our approach, but please note that direct use of these macros in other contexts is not recommended without careful review and adaptation.
+
+### No Warranty or Support
+This code is provided "as is", without warranty of any kind, express or implied. The SRRC organization makes no representations or warranties of any kind concerning the safety, suitability, lack of viruses, inaccuracies, typographical errors, or other harmful components of this software.
+
+We do not provide external support for these macros. Use of this code is entirely at your own risk. The SRRC organization shall not be liable for any damages whatsoever arising out of the use of or inability to use this software.
+
 ### General Notes
 - **Error Handling:** Each macro includes basic error handling to manage common issues, such as invalid input or database access errors.
 - **Customization:** Macros can be customized to fit specific database schemas or requirements by adjusting table names, column names, and SQL queries as needed.
