@@ -55,9 +55,9 @@ These macros are designed for internal use within the SRRC organization. They ar
 While we've made this code publicly available, it's primarily for transparency and to potentially inspire similar solutions in other organizations. We encourage others to learn from our approach, but please note that direct use of these macros in other contexts is not recommended without careful review and adaptation.
 
 ### No Warranty or Support
-This code is provided "as is", without warranty of any kind, express or implied. The SRRC organization makes no representations or warranties of any kind concerning the safety, suitability, lack of viruses, inaccuracies, typographical errors, or other harmful components of this software.
+This code is provided "as is", without any explicit warranties. While we've made efforts to ensure its functionality, the SRRC organization cannot guarantee its suitability for all purposes or environments. Users should exercise caution and review the code before implementation.
 
-We do not provide external support for these macros. Use of this code is entirely at your own risk. The SRRC organization shall not be liable for any damages whatsoever arising out of the use of or inability to use this software.
+Please note that we don't offer external support for these macros. We encourage users to test and adapt the code as needed for their specific use cases. The SRRC organization is not responsible for any issues that may arise from the use or adaptation of this software.
 
 ### General Notes
 - **Error Handling:** Each macro includes basic error handling to manage common issues, such as invalid input or database access errors.
